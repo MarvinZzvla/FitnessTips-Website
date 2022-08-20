@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fitness Tips | Contact us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <!--Header -->
+      <header>
+        <div class="logo-box">
+          <img
+            alt="logo"
+            src="https://cdn.glitch.global/8beb99d0-e54b-488d-9fd9-81e688d2e6ec/fitnesslogo.png?v=1653189556794"
+            width="128"
+            height="174"
+          />
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exercises.html">5 Better Exercises</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--Main -->
+      <main>
+        
+        <div class="contact-grid">
+          <h2 class="contact-headline">
+            Thank you! You are changing your life
+          </h2>
+          <img
+            alt="health"
+            src="https://cdn.glitch.global/8beb99d0-e54b-488d-9fd9-81e688d2e6ec/contact_us.jpg?v=1653193106152"
+          />
+          <div class="contact-form-box">
+          <h2 class="contact-headline-1">
+            If you have any questions you can contact me
+          </h2>
+
+          <div class="contact-form">
+            <form action="/" method="post">
+              <ul>
+                <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                  <label for="msg">Question:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                  <button type="submit">Submit</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+          </div>
+      </main>
+      <!--End Main -->
+    
+    <!--End Content -->
+    <!--Footer -->
+    <footer>
+      <p>&copy; 2022 FitnessTips - Marvin Zavala - WD 130 - section 31 | <a href="site-plan.html">Site Plan</a></p>
+      <div class="social">
+        <a href="https://www.facebook.com" target="_blank">
+          <img
+            alt="facebook"
+            src="https://cdn.glitch.global/dd0a5449-caf2-4a17-a1c2-351347715473/facebook.png?v=1651374082563"
+          />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img
+            alt="linkedin"
+            src="https://cdn.glitch.global/dd0a5449-caf2-4a17-a1c2-351347715473/linkedin.png?v=1651374082563"
+          />
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img
+            alt="github"
+            src="https://cdn.glitch.global/dd0a5449-caf2-4a17-a1c2-351347715473/github.png?v=1651374082607"
+          />
+        </a>
+      </div>
+    </footer>
+      </div>
+      <script>
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        //Alert = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        alert('Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!');
+    });
+</script>
+  </body>
+</html>
